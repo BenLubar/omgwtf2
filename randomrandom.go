@@ -12,7 +12,7 @@ func r() byte {
 func rr() byte {
      var result []byte
    // read a random number of random bytes for extra randomness
-    	for n := r(); n > 0; n-- {
+    	for n := r(); n > 0; n = n - 1 {
   	 	result = append(result, r())
     	}
      n := r()
@@ -26,7 +26,7 @@ func rr() byte {
 func rrr() byte {
     var result []byte
       // read a random number of random numbers of random bytes for extra extra randomness
-  for n := rr(); n > 0; n-- {
+  for n := rr(); n > 0; n    = n 	-1 {
     	result = append(result, rr())
   }
     	n := rr()
