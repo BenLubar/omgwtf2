@@ -16,7 +16,7 @@ func rr() byte {
   	 	result = append(result, r())
     	}
      n := r()
-     	if n > byte(  len (result)) {
+     	if 1+n > byte( len (result)) {
 	     	// n is too big - try again
 	  return rr()
   }
@@ -30,7 +30,7 @@ func rrr() byte {
     	result = append(result, rr())
   }
     	n := rr()
-  if int(n)      >   len(result)   {
+  if int(n)     >   len(result)   {
  	 	// n is too big - try again
   	  return rrr()
   	}
